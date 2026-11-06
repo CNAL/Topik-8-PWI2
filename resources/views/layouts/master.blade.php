@@ -28,7 +28,7 @@
     <main class="container mt-3 mb-4 flex-grow-1">
         @yield('content')
     </main>
-    <footer class="text-center py-3" style="background-color: aqua;">Copyright Chrysels Nicha Aime Laoh|D4SM-48-01|707082400010</footer>
+    <footer class="text-center py-3" style="background-color: aqua;">© Chrysels Nicha Aime Laoh|D4SM-48-01|707082400010</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

@@ -18,7 +18,7 @@ Route::get('/about', function () {
 Route::view('/contact', 'pages.contact');
 
 // Satu controller dapat memiliki beberapa method
-Route::get('/product', [ProductController::class, 'getProduct']);
+Route::get('/product', [ProductController::class, 'index']);
 Route::get('/product/addProduct', [ProductController::class, 'addProduct']);
 
 use App\Http\Controllers\SapaController;

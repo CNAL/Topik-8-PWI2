@@ -1,0 +1,12 @@
+10 // vendor\psy\psysh\src\ExecutionClosure.php(41) : eval()'d code:1
+array:8 [
+  "name_product" => "Uji Model"
+  "stock_product" => 5
+  "price_product" => 15000
+  "desc_product" => "Data uji dari tinker"
+  "id_category" => 1
+  "updated_at" => "2026-11-06T17:29:10.000000Z"
+  "created_at" => "2026-11-06T17:29:10.000000Z"
+  "id_product" => 11
+] // vendor\psy\psysh\src\ExecutionClosure.php(41) : eval()'d code:2
+11 // vendor\psy\psysh\src\ExecutionClosure.php(41) : eval()'d code:3

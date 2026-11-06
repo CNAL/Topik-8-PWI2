@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
     // Menampilkan halaman daftar produk
-    public function getProduct()
+    public function index()
     {
         $data = [
             'sName'    => 'Tulis Nama Kamu',
@@ -15,12 +15,14 @@ class ProductController extends Controller
             'sStatus'  => 'Belum Pasti',
         ];
 
-        return view('pages.product', $data);
+        return view('pages.product.show', $data + [
+            'data_produk' => Product::orderBy('id_product')->get(),
+        ]);
     }
 
     // Menampilkan halaman tambah produk
     public function addProduct()
     {
-        return view('pages.addProduct');
+        return view('pages.product.addProduct');
     }
 }
