@@ -10,9 +10,9 @@ class ProductController extends Controller
     public function index()
     {
         $data = [
-            'sName'    => 'Tulis Nama Kamu',
-            'sAddress' => 'Jl. Terus Jadian Kagak',
-            'sStatus'  => 'Belum Pasti',
+            'sName'    => 'Celestial Shop',
+            'sAddress' => 'Canterlot Street',
+            'sStatus'  => 'Buka',
         ];
 
         return view('pages.product.show', $data + [
@@ -26,3 +26,4 @@ class ProductController extends Controller
         return view('pages.product.addProduct');
     }
 }
+
