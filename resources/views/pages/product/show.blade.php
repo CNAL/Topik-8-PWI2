@@ -13,7 +13,7 @@
     </div>
     <div class="card-body">
         <table class="table table-striped table-bordered">
-            <thead>
+            <thead class="text-center">
                 <tr>
                     <th>No</th><th>Nama Produk</th><th>Stok</th>
                     <th>Harga</th><th>Deskripsi</th><th>Aksi</th>
@@ -22,9 +22,9 @@
             <tbody>
                 @foreach ($data_produk as $item)
                 <tr>
-                    <th scope="row">{{ $loop->iteration }}</th>
+                    <th scope="row" class="text-center">{{ $loop->iteration }}</th>
                     <td>{{ $item->name_product }}</td>
-                    <td>{{ $item->stock_product }}</td>
+                    <td class="text-center">{{ $item->stock_product }}</td>
                     <td>Rp. {{ number_format($item->price_product, 0, ',', '.') }}</td>
                     <td>{{ $item->desc_product }}</td>
                     <td>
@@ -38,3 +38,4 @@
     </div>
 </div>
 @endsection
+
